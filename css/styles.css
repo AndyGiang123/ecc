@@ -66,7 +66,7 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #fff;
+  background-color: #fff; /*below pic many body*/
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -159,12 +159,12 @@ sup {
 }
 
 a {
-  color: #0085A1;
+  color: #6a9b6c;
   text-decoration: none;
   background-color: transparent;
 }
 a:hover {
-  color: #004655;
+  color: #43d426;
   text-decoration: underline;
 }
 
@@ -10116,7 +10116,7 @@ img::-moz-selection {
   background-color: white;
   font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-#mainNav .navbar-brand {
+#mainNav .navbar-brand { /*left nav bar*/
   font-weight: 800;
   color: #343a40;
 }
@@ -10127,25 +10127,26 @@ img::-moz-selection {
   text-transform: uppercase;
   color: #343a40;
 }
-#mainNav .navbar-nav > li.nav-item > a {
+#mainNav .navbar-nav > li.nav-item > a { /*right nav bar*/
   font-size: 12px;
   font-weight: 800;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
+
 @media only screen and (min-width: 992px) {
   #mainNav {
     border-bottom: 1px solid transparent;
     background: transparent;
   }
-  #mainNav .navbar-brand {
+  #mainNav .navbar-brand { /*left nav bar*/
     padding: 10px 20px;
     color: #fff;
   }
-  #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+  #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover { /*left nav bar color hover*/
     color: rgba(255, 255, 255, 0.8);
   }
-  #mainNav .navbar-nav > li.nav-item > a {
+  #mainNav .navbar-nav > li.nav-item > a { /*right nav bar*/
     padding: 10px 20px;
     color: #fff;
   }
@@ -10259,13 +10260,13 @@ header.masthead {
   position: relative;
   background-size: cover;
 }
-header.masthead .overlay {
+header.masthead .overlay {          /* heading pic overlay */
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: #212529;
+  background-color: #212529;    
   opacity: 0.5;
 }
 header.masthead .page-heading,
@@ -10278,7 +10279,7 @@ header.masthead .site-heading {
   header.masthead .page-heading,
 header.masthead .post-heading,
 header.masthead .site-heading {
-    padding: 200px 0;
+    padding: 100px 0;               /* height of heading pic */
   }
 }
 header.masthead .page-heading,
