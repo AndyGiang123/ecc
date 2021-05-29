@@ -12,14 +12,14 @@ footer, header, nav {
 
 body {
   margin: 0;
-  font-family: "Lora", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  height: 100vh;
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #fff; /*below pic many body*/
+  background-color: #fce3cf; /*below pic many body*/
   font-size: 20px;
-
+  font-family: 'Cardo', serif;
 }
 
 abbr[title],
@@ -46,6 +46,7 @@ ul {
 }
 
 
+
 /*###################################################*/
 /*                     A LINKS                       */
 /*###################################################*/
@@ -53,10 +54,12 @@ a {
   color: #6a9b6c;
   text-decoration: none;
   background-color: transparent;
+
 }
 a:hover {
   color: #08cfbf;
   text-decoration: underline;
+  cursor:url('../assets/logocursor.png'), auto;
 }
 
 a:not([href]):not([class]) {
@@ -110,7 +113,6 @@ button::-moz-focus-inner,
 
 h1{
   margin-bottom: 0.5rem;
-  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 500;
   line-height: 1.2;
   font-size: 2.5rem;
@@ -143,6 +145,7 @@ hr {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  
 }
 
 @media (min-width: 576px) {
@@ -566,7 +569,7 @@ hr {
   color: rgba(0, 0, 0, 0.9);
 }
 .navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
-  color: rgba(0, 0, 0, 0.9);
+  color: red;
 }
 .navbar-light .navbar-nav .nav-link {
   color: rgba(0, 0, 0, 0.5);
@@ -601,10 +604,10 @@ hr {
 }
 
 .navbar-dark .navbar-brand {
-  color: #fff;
+  color: red;
 }
 .navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
-  color: #fff;
+  color: red;
 }
 .navbar-dark .navbar-nav .nav-link {
   color: rgba(255, 255, 255, 0.5);
@@ -619,7 +622,7 @@ hr {
 .navbar-dark .navbar-nav .active > .nav-link,
 .navbar-dark .navbar-nav .nav-link.show,
 .navbar-dark .navbar-nav .nav-link.active {
-  color: #fff;
+  color: red;
 }
 .navbar-dark .navbar-toggler {
   color: rgba(255, 255, 255, 0.5);
@@ -632,10 +635,10 @@ hr {
   color: rgba(255, 255, 255, 0.5);
 }
 .navbar-dark .navbar-text a {
-  color: #fff;
+  color: red;
 }
 .navbar-dark .navbar-text a:hover, .navbar-dark .navbar-text a:focus {
-  color: #fff;
+  color: red;
 }
 
 
@@ -663,25 +666,33 @@ hr {
 p {
   line-height: 1.5;
   margin: 30px 0;
-  
+  font-family: 'Cardo', serif;
 }
 
 
 h1{
-  font-weight: 800;  /*title and subheading*/
+  font-weight: 800;  /*title */
+  font-family: 'Playfair Display', serif;
+  color: #0f5072;
+}
+
+.subheading{
+  color: #0f5072; 
+  font-family: 'Vidaloka', serif;
+  text-size-adjust: 10000;
 }
 
 
 #mainNav { /*nav bar line*/
-  position: absolute;
   border-bottom: 1px solid gray;
-  background-color: white;
-  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  background-color: #CDE9f3;
+  font-family: 'Cardo', serif;
 }
 
 #mainNav .navbar-brand { /*left nav bar*/
   font-weight: 800;
   color: #343a40;
+  font-family: 'Cardo', serif;
 }
 
 #mainNav .navbar-toggler {
@@ -690,12 +701,16 @@ h1{
   padding: 13px;
   text-transform: uppercase;
   color: #343a40;
+  font-family: 'Cardo', serif;
 }
 #mainNav .navbar-nav > li.nav-item > a { /*right nav bar*/
+  position: static;
   font-size: 12px;
   font-weight: 800;
   letter-spacing: 1px;
   text-transform: uppercase;
+  color: black;
+  font-family: 'Cardo', serif;
 }
 
 @media only screen and (min-width: 992px) {
@@ -705,17 +720,20 @@ h1{
   }
   #mainNav .navbar-brand { /*left nav bar*/
     padding: 10px 20px;
-    color: #fff;
+    color: #0f5072;
+    font-family: 'Cardo', serif;
   }
   #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover { /*left nav bar color hover*/
-    color: rgba(255, 255, 255, 0.8);
+    color: #0085A1;
   }
   #mainNav .navbar-nav > li.nav-item > a { /*right nav bar*/
     padding: 10px 20px;
-    color: #fff;
+    color: #0f5072;
+    font-family: 'Cardo', serif;
+    font-weight: 1;
   }
   #mainNav .navbar-nav > li.nav-item > a:focus, #mainNav .navbar-nav > li.nav-item > a:hover {
-    color: rgba(255, 255, 255, 0.8);
+    color: #0085A1; /*right nav bar hover color*/
   }
 }
 @media only screen and (min-width: 992px) {
@@ -735,13 +753,15 @@ h1{
     background-color: rgba(255, 255, 255, 0.9);
   }
   #mainNav.is-fixed .navbar-brand {
-    color: #212529;
+    color: #0f5072;
   }
   #mainNav.is-fixed .navbar-brand:focus, #mainNav.is-fixed .navbar-brand:hover {
     color: #0085A1;
   }
   #mainNav.is-fixed .navbar-nav > li.nav-item > a {
-    color: #212529;
+    position: static;
+    font-family: 'Cardo', serif;
+    color: #0f5072;
   }
   #mainNav.is-fixed .navbar-nav > li.nav-item > a:focus, #mainNav.is-fixed .navbar-nav > li.nav-item > a:hover {
     color: #0085A1;
@@ -780,7 +800,7 @@ footer .copyright {
 header.masthead {
   margin-bottom: 50px;
   background: no-repeat center center;
-  background-color: #6c757d;
+  background-color: white;
   background-attachment: scroll;
   position: relative;
   background-size: cover;
@@ -791,14 +811,14 @@ header.masthead .overlay {          /* heading pic overlay */
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: #212529;    
+  /*background-color: #212529;    */
   opacity: 0.5;
 }
 header.masthead .page-heading,
 header.masthead .post-heading,
 header.masthead .site-heading {
   padding: 200px 0 150px;
-  color: white;
+  color: white;   /*heading title color*/
 }
 @media only screen and (min-width: 768px) {
   header.masthead .page-heading,
@@ -818,17 +838,17 @@ header.masthead .site-heading h1 {
 }
 header.masthead .page-heading .subheading,
 header.masthead .site-heading .subheading {
+  font-family: 'Cardo', serif;
   font-size: 24px;
   font-weight: 300;
   line-height: 1.1;
   display: block;
   margin: 10px 0 0;
-  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 @media only screen and (min-width: 768px) {
   header.masthead .page-heading h1,
 header.masthead .site-heading h1 {
-    font-size: 80px;
+    font-size: 70px; /*header size */
   }
 }
 header.masthead .post-heading h1 {
