@@ -17,9 +17,62 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #fce3cf; /*below pic many body*/
+  /*background-color: #fce3cf; /*below pic many body*/
+
   font-size: 20px;
   font-family: 'Cardo', serif;
+}
+
+.home-background{
+  background-image: url('../assets/backgrounds/back-home.png');
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: 0 320px;
+  background-attachment: local;
+}
+
+.program-background{
+  background-image: url('../assets/backgrounds/back-program.png');
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: 0 320px;
+  background-attachment: local;
+}
+
+.speakers-background{
+  background-image: url('../assets/backgrounds/back-speakers.png');
+  background-size: cover;
+  background-repeat: repeat-y;
+  background-position: 0 320px;
+  background-attachment: local;
+}
+
+.workshops-background{
+  background-image: url('../assets/backgrounds/back-workshops.png');
+  background-size: cover;
+  background-repeat: repeat-y;
+  background-position: 0 320px;
+  background-attachment: local;
+}
+
+.location-background{
+  background-image: url('../assets/backgrounds/back-location.png');
+  background-size: cover;
+  background-repeat: repeat-y;
+  background-position: 0 320px;
+  background-attachment: local;
+}
+
+.team-background{
+  background-image: url('../assets/backgrounds/back-team.png');
+  background-size: cover;
+  background-repeat: repeat-y;
+  background-position: 0 0px;
+  background-attachment: local;
+}
+
+.map{
+  text-align: center;
 }
 
 abbr[title],
@@ -147,7 +200,6 @@ hr {
 
 
 
-
 .container,
 .container-fluid,
 .container-xl,
@@ -159,6 +211,7 @@ hr {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;  
+  
 }
 
 @media (min-width: 576px) {
@@ -690,6 +743,7 @@ hr {
   font-family: 'Cardo', serif;
   border-radius: 15px;
   background: white;
+
 }
 
 
@@ -841,7 +895,7 @@ footer .copyright {
 header.masthead {
   margin-bottom: 50px;
   background: no-repeat center center;
-  background-color: #fce3cf;
+  background-color: #fff1ea;
   background-attachment: scroll;
   position: relative;
   background-size: cover;
