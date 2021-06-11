@@ -7,8 +7,8 @@
 }
 
 html{
-  width: 100%;
-  height: 100%;
+  /* width: 100%; */
+  /* height: 100%; */
 }
 
 footer, header, nav {
@@ -58,10 +58,13 @@ body {
 }
 
 .workshops-background{
-  background-image: url('../assets/backgrounds/back-workshops.png');
+  background-image: url('../assets/backgrounds/back-workshops.png') ;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   background-repeat: repeat-y;
-  background-position: 0 320px;
+  /* background-position: center; */
   background-attachment: local;
 }
 
@@ -86,8 +89,8 @@ body {
 .team-background{
   background-image: url('../assets/backgrounds/back-team.png');
   background-size: cover;
-  background-repeat: repeat-y;
-  background-position: 0 0px;
+  background-repeat: repeat;
+  background-position: 0 320px;
   background-attachment: local;
 }
 
