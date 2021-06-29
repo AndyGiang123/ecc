@@ -273,9 +273,19 @@ kbd kbd {
   font-weight: 700;
 }
 
-figure {
-  margin: 0 0 1rem;
+.sponsors figure {
+  display: block;
+  text-align: center;
+  padding-bottom: 20px ;
 }
+
+
+figcaption {
+  /* display: table-caption; */
+  caption-side: bottom;
+  /* background: #fff; */
+  /* padding: 0 5px 5px; */
+}​
 
 img,
 svg {
@@ -611,12 +621,16 @@ progress {
 .container-sm {
   width: 100%;
   padding-top: 20px;
-  padding-right: var(--bs-gutter-x, 0.75rem);
-  padding-left: var(--bs-gutter-x, 0.75rem);
+  /* padding-left: var(--bs-gutter-x, 5.75rem); */
+  /* padding-right: var(--bs-gutter-x, 5.75rem); */
+  padding-left: 50px;
+  padding-right: 50px;
   margin-right: auto;
   margin-left: auto;
   justify-content: center;
 }
+
+
 
 .conf-directors{
   text-align: center;
@@ -951,6 +965,9 @@ figcaption {
 .workshop-item{
   /* padding-left:50px; */
   /* padding-right:50px; */
+  padding: 10px 30px 20px 30px;
+  border: 1px solid #cd5c57;
+  border-radius: 40px;
 }
 
 .workshop-title{
