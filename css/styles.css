@@ -279,6 +279,12 @@ kbd kbd {
   padding-bottom: 20px ;
 }
 
+.sponsors figure img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
 
 figcaption {
   /* display: table-caption; */
@@ -623,8 +629,8 @@ progress {
   padding-top: 20px;
   /* padding-left: var(--bs-gutter-x, 5.75rem); */
   /* padding-right: var(--bs-gutter-x, 5.75rem); */
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 10%;
+  padding-right: 10%;
   margin-right: auto;
   margin-left: auto;
   justify-content: center;
@@ -3622,13 +3628,15 @@ figcaption {
 }
 
 .navbar {
-  position: fixed;
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding-top: 1.5%;
-  padding-bottom: 1%;
+  /* padding-top: 1%; */
+  /* padding-bottom: 1%; */
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 .navbar > .container,
 .navbar > .container-fluid,
@@ -3643,13 +3651,13 @@ figcaption {
   justify-content: space-between;
 }
 .navbar-brand {
-  display: inline-block;
+  /* display: inline-block; */
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
   margin-left: 5%;
   margin-top: 1%;
   font-size: 20px;
-  line-height: inherit;
+  /* line-height: inherit; */
   white-space: nowrap;
 }
 .navbar-nav {
@@ -3674,7 +3682,7 @@ figcaption {
 
 .navbar-collapse {
   flex-basis: 100%; /* where navbar items position*/
-  flex-grow: 10;
+  flex-grow: 1;
   align-items: center;
   margin-right: 5%;
   margin-top: 1%;
@@ -3774,7 +3782,7 @@ figcaption {
   .navbar-expand-lg {
     flex-wrap: nowrap;
     justify-content: flex-start;
-    position: fixed;
+    /* position: fixed; */
   }
   .navbar-expand-lg .navbar-nav {
     flex-direction: row;
@@ -5421,13 +5429,13 @@ figcaption {
   --bs-aspect-ratio: calc(9 / 21 * 100%);
 }
 
-.fixed-top {
+/* .fixed-top {
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
   z-index: 1030;
-}
+} */
 
 .fixed-bottom {
   position: fixed;
@@ -10237,7 +10245,7 @@ blockquote {
   #mainNav.is-fixed {
     /* when the user scrolls down, we hide the header right above the viewport */
     position: fixed;
-    top: -97px;
+    top: -83px;
     transition: transform 0.4s;
     border-bottom: 1px solid transparent;
     background-color: rgba(205, 233, 243, 0.95);
@@ -10249,7 +10257,6 @@ blockquote {
     color: #0085A1;
   }
   #mainNav.is-fixed .navbar-nav > li.nav-item > a { /*scroll up nav bar*/
-    position: static;
     font-family: 'Open Sans', sans-serif;
     color: #0f5072;
   }
@@ -10259,10 +10266,10 @@ blockquote {
   #mainNav.is-visible {
     /* if the user changes the scrolling direction, we show the header */
     transform: translate3d(0, 100%, 0);
-    top: -101px;
+    /* top: -101px; */
   }
 }
-@media (min-width: 1249px) {
+/* @media (min-width: 1249px) {
   #mainNav.is-fixed {
     top: -100px;
   }
@@ -10286,7 +10293,7 @@ blockquote {
   #mainNav.is-fixed {
     top: -108px;
   }
-}
+} */
 
 /*###################################################*/
 /*                       FOOTER                      */
