@@ -220,7 +220,7 @@ a {
 
 a:hover {
   color: #08cfbf;
-  text-decoration: underline;
+  text-decoration: none;
   cursor:url('../assets/newlogocursor.png'), auto;
 }
 
@@ -627,10 +627,10 @@ progress {
 .container-sm {
   width: 100%;
   padding-top: 20px;
-  /* padding-left: var(--bs-gutter-x, 5.75rem); */
-  /* padding-right: var(--bs-gutter-x, 5.75rem); */
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: var(--bs-gutter-x, 2rem);
+  padding-right: var(--bs-gutter-x, 2rem);
+  /* padding-left: 10%; */
+  /* padding-right: 10%; */
   margin-right: auto;
   margin-left: auto;
   justify-content: center;
@@ -905,6 +905,10 @@ figcaption {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.4s ease-out;
+  border: 2px solid #fac5a4;
+  border-top: none;
+  background-color: rgba(250, 250, 250, 0.4);
+  /* border-radius: 10px; */
 }
 
 .column {
@@ -974,6 +978,8 @@ figcaption {
   padding: 10px 30px 20px 30px;
   border: 1px solid #cd5c57;
   border-radius: 40px;
+  margin: 20px;
+  background-color: rgba(250, 250, 250, 0.4);
 }
 
 .workshop-title{
@@ -2571,6 +2577,10 @@ figcaption {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
   }
+
+  .program-date {
+  }
+  
 }
 @media (max-width: 767.98px) {
   .table-responsive-md {
@@ -3628,15 +3638,16 @@ figcaption {
 }
 
 .navbar {
-  position: relative;
+  position: fixed;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   /* padding-top: 1%; */
   /* padding-bottom: 1%; */
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  /* padding-top: 0.5rem; */
+  /* padding-bottom: 0.5rem; */
+
 }
 .navbar > .container,
 .navbar > .container-fluid,
@@ -3659,6 +3670,9 @@ figcaption {
   font-size: 20px;
   /* line-height: inherit; */
   white-space: nowrap;
+}
+.navbar-brand img {
+  padding-right: 5%;
 }
 .navbar-nav {
   display: flex;
@@ -3756,6 +3770,7 @@ figcaption {
   .navbar-expand-md {
     flex-wrap: nowrap;
     justify-content: flex-start;
+    position: fixed;
   }
   .navbar-expand-md .navbar-nav {
     flex-direction: row;
@@ -3782,7 +3797,7 @@ figcaption {
   .navbar-expand-lg {
     flex-wrap: nowrap;
     justify-content: flex-start;
-    /* position: fixed; */
+    position: fixed;
   }
   .navbar-expand-lg .navbar-nav {
     flex-direction: row;
@@ -5429,13 +5444,13 @@ figcaption {
   --bs-aspect-ratio: calc(9 / 21 * 100%);
 }
 
-/* .fixed-top {
+.fixed-top {
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
   z-index: 1030;
-} */
+}
 
 .fixed-bottom {
   position: fixed;
@@ -10149,7 +10164,7 @@ hr {
 }
 
 p {
-  margin: 2rem 0;
+  /* margin: 2rem 0; */
 }
 p a {
   text-decoration: underline;
@@ -10245,9 +10260,17 @@ blockquote {
   #mainNav.is-fixed {
     /* when the user scrolls down, we hide the header right above the viewport */
     position: fixed;
-    top: -83px;
+
+    /* 25% view */
+    /* top: -120px; */
+
+    /* 100% view */
+    /* top: -80px; */
+
+    /* top: 0px; */
+
     transition: transform 0.4s;
-    border-bottom: 1px solid transparent;
+    border-bottom: 0px solid black;
     background-color: rgba(205, 233, 243, 0.95);
   }
   #mainNav.is-fixed .navbar-brand {
@@ -10265,35 +10288,10 @@ blockquote {
   }
   #mainNav.is-visible {
     /* if the user changes the scrolling direction, we show the header */
-    transform: translate3d(0, 100%, 0);
-    /* top: -101px; */
+    /* transform: translate3d(0, 100%, 0); */
   }
 }
-/* @media (min-width: 1249px) {
-  #mainNav.is-fixed {
-    top: -100px;
-  }
-}
-@media (min-width: 1619px) {
-  #mainNav.is-fixed {
-    top: -105px;
-  }
-}
-@media (min-width: 1649px) {
-  #mainNav.is-fixed {
-    top: -106px;
-  }
-}
-@media (min-width: 1699px) {
-  #mainNav.is-fixed {
-    top: -107px;
-  }
-}
-@media (min-width: 1749px) {
-  #mainNav.is-fixed {
-    top: -108px;
-  }
-} */
+
 
 /*###################################################*/
 /*                       FOOTER                      */
@@ -10603,7 +10601,10 @@ iframe {
 
   .location-content{
     width: 100%;
+    padding: 5px;
+    text-align: center;
   }
+
 
   .location-img img{
     width: 100%;
@@ -10614,5 +10615,8 @@ iframe {
     padding: 20px;
   }
 
+  p {
+    margin: auto;
+  }
   
 }
