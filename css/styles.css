@@ -2576,9 +2576,11 @@ figcaption {
 .site-heading {
   /* margin-bottom: 10px; */
   /* margin-top: 50px; */
-  margin-top: 2vh;
-  margin-bottom: 2vh;
-  display: flexbox;
+  /* margin-top: 2vh; */
+  /* margin-bottom: 2vh; */
+  /* margin-left: 5vh; */
+  /* margin-right: 5vh; */
+  display: inline-block;
   align-items: center;
   justify-content: center;
   
@@ -2587,17 +2589,20 @@ figcaption {
 .landing {
   /* keep display flex */
   display: flex;
+  padding-top: 10%;
 }
 
 .landing-page {
+  position: relative;
   height: 100vh;
   /* keep display flex */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-size: cover; 
-  margin-bottom: 30px;
+  /* background-size: cover;  */
+  padding-top: 10px;
+  padding-bottom: 100px;
 }
 
 
@@ -2608,30 +2613,38 @@ figcaption {
 .landing-words {
   color: #0f5072; 
   font-family: 'Vidaloka', serif;
-  text-size-adjust: 10000;
-  font-size: 2em;
+  /* text-size-adjust: 10000; */
+  font-size: calc(30px + (50 - 30) * ((100vw - 300px) / (1600 - 300)));
+  padding-bottom: 0px;
+}
+
+.landing-subheading {
+  color: #0f5072; 
+  font-family: 'Vidaloka', serif;
+  font-size: calc(18px + (30 - 18) * ((100vw - 300px) / (1600 - 300)));
 }
 
 .landing .landing-image {
-  max-height: 100%;  
   max-width: 100%; 
+  display: block; 
+  height: auto;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
-  margin: auto;
-  padding: 10px;
+  /* padding: 10px; */
 }
 
 a.button3 {
-  display:inline-block;
-  padding:0.3em 1.2em;
-  margin:0 0.3em 0.3em 0;
-  border-radius:2em;
+  display: inline-block;
+  padding: 0.3em 1.2em;
+  margin: 0.5em 0.2em 0.2em 0;
+  border-radius:0.8em;
   box-sizing: border-box;
   text-decoration:none;
-  font-family:'Roboto',sans-serif;
-  font-weight:300;
+  font-family: 'Vidaloka', serif;
+  font-size: 1.2em;
+  font-weight: 500;
   color:#0f5072;
   background-color:#fac5a4;
   text-align:center;
@@ -2640,7 +2653,8 @@ a.button3 {
 a.button3:hover{
   background-color: #f8af82;
 }
-@media all and (max-width:30em){
+
+@media all and (max-width:991px){
   a.button3 {
     display: block;
     margin: 0.2em auto;
@@ -2653,6 +2667,16 @@ a.button3:hover{
     -webkit-overflow-scrolling: touch;
   }
 
+  /* .landing-words {
+    font-size: 2em;
+  } */
+
+  .landing {
+    padding: 16px;
+    padding-top: 0px;
+  }
+
+
   
 }
 @media (max-width: 767.98px) {
@@ -2661,16 +2685,12 @@ a.button3:hover{
     -webkit-overflow-scrolling: touch;
   }
 
-  .landing-words {
+  /* .landing-words {
     font-size: 2em;
     font-weight: 500;
-  }
+  } */
 
-  .landing-page {
-    margin-top: 60px;
-    padding-left: 50px;
-    padding-right: 50px;
-  }
+
 
 }
 @media (max-width: 991.98px) {
@@ -2685,8 +2705,27 @@ a.button3:hover{
 
   .landing {
     display: inline-block;
+    margin-top: 30%;
+
   }
 
+  .landing-image {
+    padding-top: 20px;
+  }
+
+  .landing-image img {
+    width: 100%;
+  }
+
+
+  .landing-words {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .landing-subheading {
+    text-align: center;
+  }
 
 }
 @media (max-width: 1199.98px) {
@@ -2706,6 +2745,7 @@ a.button3:hover{
   .navbar-brand{
     display: none;
   }
+
 }
 .form-label {
   margin-bottom: 0.5rem;
@@ -3745,7 +3785,7 @@ a.button3:hover{
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding-top: .5%;
+  padding-top: 0.5%;
   /* padding-bottom: 1%; */
   /* padding-top: 0.5rem; */
   /* padding-bottom: 0.5rem; */
@@ -10457,16 +10497,16 @@ footer .copyright {
 header.masthead {
   position: relative;
   margin-bottom: 0px;
-  padding-top: calc(8rem + 57px);
-  padding-bottom: 80rem;
+  padding-top: calc(6rem + 5px);
+  padding-bottom: 8rem;
   background: no-repeat center center;
   background-color: #fff1ea;
   background-size: cover;
   border-bottom: 1px solid #f5b7a0; 
   background-attachment: scroll;
   /* padding: 70px 0px; */
-  padding-top: 70px;
-  padding-bottom: 20px;
+  /* padding-top: 70px; */
+  /* padding-bottom: 20px; */
 }
 /* header.masthead:before {
   content: "";
@@ -10564,6 +10604,7 @@ header.masthead .post-heading .meta a {
   /* Preserve aspet ratio */
   min-height: 100%; 
   min-width: 100%;
+  position: relative;
 }
 
 .program-background{
@@ -10718,9 +10759,6 @@ iframe {
     width: 100%;
   }
 
-  .landing-image img {
-    width: 100%;
-  }
 
   .team-group-pic{
     text-align: center;
