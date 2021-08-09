@@ -49,20 +49,22 @@
   }
 }
 
-html,body
-{
-  min-width: 100%;
+html,body{
   width: 100%;
   height: 100%;
   margin: 0px;
   padding: 0px !important;
   /* overflow-x: hidden;  */
-
 }
+
+
 
 footer, header, nav {
   display: block;
 }
+
+
+
 
 
 body {
@@ -699,6 +701,8 @@ progress {
 
 #Awesome .circle-bio{
   padding-bottom: 7.5px; /*adjust: 7.5*/
+  padding-left: 7.5px; /*adjust: 7.5*/
+  padding-right: 7.5px; /*adjust: 7.5*/
 }
 
 
@@ -2573,6 +2577,8 @@ figcaption {
   -webkit-overflow-scrolling: touch;
 }
 
+
+
 .site-heading {
   /* margin-bottom: 10px; */
   /* margin-top: 50px; */
@@ -2589,7 +2595,7 @@ figcaption {
 .landing {
   /* keep display flex */
   display: flex;
-  padding-top: 10%;
+  height: auto;
 }
 
 .landing-page {
@@ -2633,6 +2639,7 @@ figcaption {
   top: 0;
   bottom: 0;
   /* padding: 10px; */
+  float: right;
 }
 
 a.button3 {
@@ -2705,7 +2712,7 @@ a.button3:hover{
 
   .landing {
     display: inline-block;
-    margin-top: 30%;
+    /* margin-top: 30%; */
 
   }
 
@@ -2747,6 +2754,37 @@ a.button3:hover{
   }
 
 }
+
+@media (min-height: 991.98px) {
+  .landing {
+    display: block;
+  }
+}
+
+@media (max-height: 599.98px) {
+
+  .landing {
+    padding-top: 30%;
+  }
+
+
+}
+
+@media (max-height: 399.98px) {
+
+  .landing {
+    padding-top: 70%;
+  }
+}
+
+@media (max-height: 299.98px) {
+
+  .landing {
+    padding-top: 90%;
+  }
+}
+
+
 .form-label {
   margin-bottom: 0.5rem;
 }
@@ -3789,7 +3827,6 @@ a.button3:hover{
   /* padding-bottom: 1%; */
   /* padding-top: 0.5rem; */
   /* padding-bottom: 0.5rem; */
-
 }
 .navbar > .container,
 .navbar > .container-fluid,
@@ -10348,8 +10385,10 @@ blockquote {
   color: #6c757d;
 }
 
+/* mobile bar with menu */
 #mainNav {
-  position: absolute;
+  /* position: absolute; */
+  position: relative;
   top: 0;
   left: 0;
   right: 0;
@@ -10383,7 +10422,9 @@ blockquote {
 @media (min-width: 992px) {
   #mainNav {
     border-bottom: 1px solid transparent;
-    background: transparent;
+    /* background: transparent; */
+    background-color: #fff1ea;
+
   }
   #mainNav .navbar-brand { /*left nav bar desktop*/
     padding: 10px 20px;
@@ -10453,7 +10494,7 @@ blockquote {
 /*###################################################*/
 
 footer {
-  padding: 50px 0 65px;
+  padding: 20px 0 40px;
 }
 
 footer .copyright {
@@ -10466,8 +10507,39 @@ footer .copyright {
 }
 
 .icons{
+  margin-top: 8px;
   text-align: center;
 }
+
+
+/* .back-to-top {
+  text-align: center;
+}
+.back-to-top a {
+  padding: 8px;
+  margin: 100px;
+  border-radius:0.8em;
+  text-decoration:none;
+  font-family: 'Vidaloka', serif;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  background-color: #f5b7a0;
+}
+
+.back-to-top a{
+  color: white;
+}
+
+.back-to-top a:hover {
+  color: white;
+} */
+
+footer .container {
+  padding-top: 0px;
+}
+
+
 
 .fa-instagram-square:hover{
   color:#fec385;
@@ -10496,17 +10568,13 @@ footer .copyright {
 
 header.masthead {
   position: relative;
-  margin-bottom: 0px;
   padding-top: calc(6rem + 5px);
   padding-bottom: 8rem;
   background: no-repeat center center;
   background-color: #fff1ea;
-  background-size: cover;
+  /* background-size: cover; */
   border-bottom: 1px solid #f5b7a0; 
   background-attachment: scroll;
-  /* padding: 70px 0px; */
-  /* padding-top: 70px; */
-  /* padding-bottom: 20px; */
 }
 /* header.masthead:before {
   content: "";
@@ -10515,7 +10583,7 @@ header.masthead {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #212529;
+  /* background-color: #212529; */
   opacity: 0.5;
 } */
 header.masthead .page-heading,
