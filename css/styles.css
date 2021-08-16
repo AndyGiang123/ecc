@@ -65,8 +65,6 @@ footer, header, nav {
 
 
 
-
-
 body {
   margin: 0;
   font-weight: 400;
@@ -2580,12 +2578,12 @@ figcaption {
 
 
 .site-heading {
-  /* margin-bottom: 10px; */
-  /* margin-top: 50px; */
-  /* margin-top: 2vh; */
-  /* margin-bottom: 2vh; */
-  /* margin-left: 5vh; */
-  /* margin-right: 5vh; */
+  margin-bottom: 10px;
+  margin-top: 50px;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  margin-left: 5vh;
+  margin-right: 5vh;
   display: inline-block;
   align-items: center;
   justify-content: center;
@@ -2595,20 +2593,21 @@ figcaption {
 .landing {
   /* keep display flex */
   display: flex;
-  height: auto;
+  /* height: auto; */
+  padding-top: 10px;
 }
 
 .landing-page {
   position: relative;
-  height: 100vh;
+  /* height: calc(100vh - 60px); */
   /* keep display flex */
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   align-items: center;
   justify-content: center;
   /* background-size: cover;  */
   padding-top: 10px;
-  padding-bottom: 100px;
+  padding-bottom: 10px;
 }
 
 
@@ -2748,23 +2747,37 @@ a.button3:hover{
   }
 }
 
+@media (min-height: 609.98px) {
+  .landing-page {
+    height: calc(100vh - 60px);
+  }
+}
+
 @media (min-width: 991.98px) {
   .navbar-brand{
     display: none;
   }
 
+
 }
 
 @media (min-height: 991.98px) {
+
   .landing {
     display: block;
   }
+
+  .landing-page {
+    height: 100vh;
+  }
 }
+
 
 @media (max-height: 599.98px) {
 
   .landing {
-    padding-top: 30%;
+    /* padding-top: 30%; */
+    padding-top: 10px;
   }
 
 
@@ -2773,14 +2786,16 @@ a.button3:hover{
 @media (max-height: 399.98px) {
 
   .landing {
-    padding-top: 70%;
+    /* padding-top: 70%; */
+    padding-top: 10px;
   }
 }
 
 @media (max-height: 299.98px) {
 
   .landing {
-    padding-top: 90%;
+    /* padding-top: 90%; */
+    padding-top: 10px;
   }
 }
 
@@ -4916,35 +4931,7 @@ a.button3:hover{
   display: none;
 }
 
-.toast-container {
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  max-width: 100%;
-  pointer-events: none;
-}
-.toast-container > :not(:last-child) {
-  margin-bottom: 0.75rem;
-}
 
-.toast-header {
-  display: flex;
-  align-items: center;
-  padding: 0.5rem 0.75rem;
-  color: #6c757d;
-  background-color: rgba(255, 255, 255, 0.85);
-  background-clip: padding-box;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-}
-.toast-header .btn-close {
-  margin-right: -0.375rem;
-  margin-left: 0.75rem;
-}
-
-.toast-body {
-  padding: 0.75rem;
-  word-wrap: break-word;
-}
 
 .tooltip {
   position: absolute;
@@ -10568,13 +10555,15 @@ footer .container {
 
 header.masthead {
   position: relative;
-  padding-top: calc(6rem + 5px);
-  padding-bottom: 8rem;
+  /* padding-top: calc(6rem + 5px);
+  padding-bottom: 8rem; */
+  padding-top: 0.1px;
+  padding-bottom: 0.1px;
   background: no-repeat center center;
   background-color: #fff1ea;
   /* background-size: cover; */
   border-bottom: 1px solid #f5b7a0; 
-  background-attachment: scroll;
+  /* background-attachment: scroll; */
 }
 /* header.masthead:before {
   content: "";
@@ -10640,8 +10629,8 @@ header.masthead .post-heading .meta a {
 /* 992px and less is menu bar */
 @media (min-width: 992px) {
   header.masthead {
-    /* padding-top: 12.5rem;
-    padding-bottom: 12.5rem; */
+    padding-top: .5rem;
+    padding-bottom: .5rem;
   }
   header.masthead .page-heading h1, header.masthead .page-heading .h1,
   header.masthead .site-heading h1,
