@@ -848,17 +848,6 @@ progress {
 	border-radius: 20px 20px 0px 0px;
 }
 
-.ethan .front{
-  margin-bottom: 30px;
-  margin-left: -30px;
-  
-  background-image: url('../assets/team/ethan.jpg');
-  background-repeat: no-repeat;
-  background-size: 210px 200px; /*adjust: 210 210*/
-  transform: rotate(180deg); 
-	border-radius: 20px 20px 0px 0px;
-}
-
 .tifflee .front{
   margin-bottom: 30px;
   margin-left: -30px;
@@ -930,6 +919,72 @@ progress {
   margin-left: -30px;
   
   background-image: url('../assets/team/steph.jpg');
+  background-repeat: no-repeat;
+  background-size: 210px 200px; /*adjust: 210 210*/
+  transform: rotate(180deg); 
+	border-radius: 20px 20px 0px 0px;
+}
+
+.thomas .front{
+  margin-bottom: 30px;
+  margin-left: -30px;
+  
+  background-image: url('../assets/team/thomas.jpg');
+  background-repeat: no-repeat;
+  background-size: 210px 200px; /*adjust: 210 210*/
+  transform: rotate(180deg); 
+	border-radius: 20px 20px 0px 0px;
+}
+
+.brian .front{
+  margin-bottom: 30px;
+  margin-left: -30px;
+  
+  background-image: url('../assets/team/brian.jpg');
+  background-repeat: no-repeat;
+  background-size: 210px 200px; /*adjust: 210 210*/
+  transform: rotate(180deg); 
+	border-radius: 20px 20px 0px 0px;
+}
+
+.ethen .front{
+  margin-bottom: 30px;
+  margin-left: -30px;
+  
+  background-image: url('../assets/team/ethen.jpg');
+  background-repeat: no-repeat;
+  background-size: 210px 200px; /*adjust: 210 210*/
+  transform: rotate(180deg); 
+	border-radius: 20px 20px 0px 0px;
+}
+
+.maven .front{
+  margin-bottom: 30px;
+  margin-left: -30px;
+  
+  background-image: url('../assets/team/maven.jpg');
+  background-repeat: no-repeat;
+  background-size: 210px 200px; /*adjust: 210 210*/
+  transform: rotate(180deg); 
+	border-radius: 20px 20px 0px 0px;
+}
+
+.max .front{
+  margin-bottom: 30px;
+  margin-left: -30px;
+  
+  background-image: url('../assets/team/max.jpg');
+  background-repeat: no-repeat;
+  background-size: 210px 200px; /*adjust: 210 210*/
+  transform: rotate(180deg); 
+	border-radius: 20px 20px 0px 0px;
+}
+
+.ethan .front{
+  margin-bottom: 30px;
+  margin-left: -30px;
+  
+  background-image: url('../assets/team/ethan.jpeg');
   background-repeat: no-repeat;
   background-size: 210px 200px; /*adjust: 210 210*/
   transform: rotate(180deg); 
