@@ -691,13 +691,13 @@ progress {
 
 #Awesome .circle-name {
   padding-top: 67.5px; /*adjust: 67.5*/
-  padding-bottom: 7.5px; /*adjust: 7.5*/
+  padding-bottom: 4px; /*adjust: 7.5*/
   font-size: 15px; /*adjust: 15*/
   font-family: 'Cardo' serif;
 }
 
 #Awesome .circle-bio{
-  padding-bottom: 7.5px; /*adjust: 7.5*/
+  padding-bottom: 4px; /*adjust: 7.5*/
   padding-left: 7.5px; /*adjust: 7.5*/
   padding-right: 7.5px; /*adjust: 7.5*/
 }
@@ -1261,6 +1261,12 @@ figcaption {
   -webkit-transition: all .25s linear; 
 }
 
+.location-img{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
 .location-item .location-img{
   max-height: 100%;  
   max-width: 100%; 
@@ -1268,15 +1274,21 @@ figcaption {
   right: 0;
   top: 0;
   bottom: 0;
-  margin: auto;
+  margin: 0px;
   padding: 10px;
-  
+  text-align: center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
 }
 
 .location-item .location-img img{
   border-radius: 20px;
 }
 
+.bus-list {
+  text-align: left;
+}
 
 .location-content{
   padding: 10px;
@@ -1295,6 +1307,28 @@ figcaption {
   font-size: 16px;
   padding-top: 0px;
   margin-top: 0px;
+  text-align: center;
+}
+
+.location-content h3 {
+  text-align: left;
+  margin-bottom: 0px;
+  font-size: 16px;
+}
+
+.travel {
+  font-family: "Cardo", sans-serif;
+  color:black;
+  font-size: 16px;
+  padding-top: 0px;
+  margin-top: 0px;
+  text-align: left;
+
+  width: 50%;
+}
+
+.location-content ul {
+  text-align: left;
 }
 
 .location-content p {
